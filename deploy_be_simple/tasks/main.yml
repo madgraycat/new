@@ -23,3 +23,8 @@
     db: app
     new_owner: worker
   become_user: postgres
+- name: postgresql enable service
+  systemd:
+    name: postgresql
+    enabled: yes
+    state: restarted
