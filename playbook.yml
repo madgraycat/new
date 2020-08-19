@@ -1,0 +1,7 @@
+---
+- name: deploy be
+  hosts: app
+  become: yes
+  roles:
+    - deploy_be_simple
+  

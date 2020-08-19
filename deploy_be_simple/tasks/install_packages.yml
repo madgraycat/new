@@ -1,0 +1,8 @@
+---
+- name: install packages
+  apt:
+    name: "{{ item }}"
+    update_cache: yes
+  with_items:
+    - python3-pip
+    - git
