@@ -10,7 +10,7 @@
 - name: create db
   postgresql_db:
     name: app
-    become_user: postgres
+  become_user: postgres
 - name: create db user
   postgresql_user:
     db: app
