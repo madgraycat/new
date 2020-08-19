@@ -19,7 +19,7 @@
     role_attr_flags: SUPERUSER
   become_user: postgres
 - name: set owner db app
-  postresql_owner:
+  postgresql_owner:
     db: app
     new_owner: worker
   become_user: postgres
